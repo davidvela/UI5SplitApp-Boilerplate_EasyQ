@@ -1,7 +1,7 @@
 jQuery.sap.require("sap.m.MessageBox");
 jQuery.sap.require("ui5eq.app.RadarChartMe");
 
-sap.ui.controller("ui5eq.view.RadarChartPage", {
+sap.ui.controller("ui5eq.view.D3JS.RadarChartPage", {
 
 	onInit: function() {
 

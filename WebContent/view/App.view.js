@@ -68,7 +68,14 @@ sap.ui.jsview("ui5eq.view.App", {
         this.app.addDetailPage(sap.ui.jsview("EQWeb", "ui5eq.view.EQ.EQWeb"));
         //this.app.addDetailPage(sap.ui.htmlview("RadarChartPage", "ui5eq.view.EQ.RadarChartPage"));
         //D3JS
-        
+        this.app.addDetailPage(sap.ui.jsview("project", 			"ui5eq.view.D3JS.project"));
+        this.app.addDetailPage(sap.ui.htmlview("RadarChartPage",  	"ui5eq.view.D3JS.RadarChartPage"));
+       /*this.app.addDetailPage(sap.ui.htmlview("PieChartPage",    	"ui5eq.view.D3JS.D3JS.z_Donut"));
+        this.app.addDetailPage(sap.ui.htmlview("LineChartPage",   	"ui5eq.view.D3JS.z_Line"));
+        this.app.addDetailPage(sap.ui.htmlview("BarChartPage",    	"ui5eq.view.D3JS.z_Bars"));
+        this.app.addDetailPage(sap.ui.htmlview("BilevelChartPage",	"ui5eq.view.D3JS.z_Bilevel"));
+        this.app.addDetailPage(sap.ui.htmlview("WorldChartPage",  	"ui5eq.view.D3JS.z_World"));
+        this.app.addDetailPage(sap.ui.htmlview("BublesChartPage", 	"ui5eq.view.D3JS.z_Bubbles"));*/
         
         
         // navigate to the first page in both master and detail areas.

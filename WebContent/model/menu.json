@@ -20,11 +20,6 @@
         "targetPage": "project",
         "description": "Demo Project"        
     },  {
-        "title": "Detail Page",
-        "icon": "sap-icon://detail-view",
-        "targetPage": "RadarChartPage",
-        "description": "RadarChart"
-    },{
         "title": "RadarChart",
         "icon": "sap-icon://radar-chart",
         "targetPage": "RadarChartPage",

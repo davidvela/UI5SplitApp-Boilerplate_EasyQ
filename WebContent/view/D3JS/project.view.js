@@ -1,9 +1,7 @@
 jQuery.sap.require("ui5eq.app.config");
-
-sap.ui.jsview("ui5eq.view.project", {
-
+sap.ui.jsview("ui5eq.view.D3JS.project", {
     getControllerName: function() {
-        return "ui5eq.view.project";
+        return "ui5eq.view.D3JS.project";
     },
 
     createContent: function(oController) {
@@ -11,7 +9,7 @@ sap.ui.jsview("ui5eq.view.project", {
 		var otxtCL = new sap.m.Text({ text : "Please select the countries to be analysed", })
 		
 		var oTableData = new sap.ui.table.Table({ 
-			id : "idTableUsers", 
+			id : "idTableUsers22", 
 			//width: "75%",
 			toolbar : new sap.m.Toolbar({	
 				content : [ new sap.m.Input({ value: "Cities", editable: false}),
@@ -71,7 +69,7 @@ sap.ui.jsview("ui5eq.view.project", {
         
 		var WorldView ; //= sap.ui.htmlview("WorldMap", "ui5eq.view.WorldMap");
 
-		var RadarView = sap.ui.htmlview("RadarChart", "ui5eq.view.RadarChart");
+		var RadarView = sap.ui.htmlview("RadarChart", "ui5eq.view.D3JS.RadarChart");
 
 		var oSpace1 = new sap.m.Text({ text : " " });
 		var oSpace2 = new sap.m.Text({ text : " " });

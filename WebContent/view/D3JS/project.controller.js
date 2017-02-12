@@ -7,11 +7,9 @@ sap.ui.define([
                ], function(formatter, MessageToast, Filter, FilterOperator) {
 	"use strict";
 
-	sap.ui.controller("ui5eq.view.project", {
+	sap.ui.controller("ui5eq.view.D3JS.project", {
 		//return .extend("so.mng.controller.Detail", {
-
 		formatter: formatter,
-
 		onInit: function() {
 
 			//this.getView().setModel(new sap.ui.model.json.JSONModel("model/EQUsers.json"));
