@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+</head>
+
+<!-- I recommend you host this file on your own, since this will change without warning 
+	<script	src="http://datamaps.github.io/scripts/datamaps.world.min.js?v=1"></script>
+
+  	<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  	<script src="http://d3js.org/topojson.v1.min.js"></script>
+
+	<script src="http://d3js.org/d3.v3.min.js"></script>
+	<script src="http://d3js.org/topojson.v1.min.js"></script>
+	<script	src="http://datamaps.github.io/scripts/datamaps.world.min.js?v=1"></script>
+-->
+
+
+<style>
+* {
+	margin: 0;
+	padding: 0;
+}
+
+svg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+</style>
+
+<body>
+	<template data-controller-name="ui5eq.view.z_ChartPage">
+
+	<div data-sap-ui-type="sap.m.Page" data-title="World Chart">
+		<div data-sap-ui-aggregation="customHeader" class=" ">
+			<div data-sap-ui-type="sap.m.Bar">
+
+				<div data-sap-ui-aggregation="contentMiddle">
+					<div data-sap-ui-type="sap.m.Label" data-text="World Chart">
+					</div>
+				</div>
+
+				<div data-sap-ui-aggregation="contentRight">
+					<div data-sap-ui-type="sap.m.Button" id="homeRadarButtonID"
+						data-tap="onHome" data-icon="sap-icon://home"></div>
+				</div>
+			</div>
+		</div>
+		</br>
+
+		<h1>World Chart</h1>
+			<div data-sap-ui-type="sap.m.Button" id="drawRadarButtonID"
+				data-text="Draw!" data-width="200px" data-height="50px"
+				data-tap="onWorld"></div>		
+	<svg 	position="absolute" 	width= 100% height= 100%>
+  <g id="World"	></g>
+</svg>
+
+	<script type="text/javascript">
+	 
+	   var svgStates = d3.select("svg #World"); // (1)
+
+	   var projection = d3.geo.albersUsa(); // (2)
+
+	   var path = d3.geo.path()
+	       .projection(projection);  // (3)
+
+	   d3.json("./app/usa.json", function(error, topologies) {  // (4)
+
+	     var state = topojson.feature(topologies[0], topologies[0].objects.stdin);  // (5)
+
+	     svgStates.selectAll("path")  // (6)
+	         .data(state.features)
+	         .enter()
+	       .append("path")
+	         .attr("d", path);
+	   });
+	
+	   
+    </script>
+
+</body>
+
+</html>

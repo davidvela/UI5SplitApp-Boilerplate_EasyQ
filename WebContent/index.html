@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8">
+
+    <title>Easy Q</title>
+
+    <!-- UI5 Bootstrap with OpenUI5 -->
+    <script id="sap-ui-bootstrap" type="text/javascript" 
+    	data-sap-ui-theme= "sap_belize"  
+    	src = 'https://sapui5.netweaver.ondemand.com/resources/sap-ui-core.js'
+    	data-sap-ui-xx-bindingSyntax="complex" 
+    	data-sap-ui-libs="sap.m, sap.ui.table, sap.ui.core, sap.ui.unified"
+        data-sap-ui-resourceroots='{
+            "ui5eq": "./"
+        }'>        >
+    </script>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    
+    <!-- alternative SAPUI5/OpenUI5 locations
+    
+    parameter mode=LeftAppMenuNavi -> Master Detail 
+    file:///C:/Users/a604080/git/SAPUI5/EasyQ/WebContent/index.html?mode=LeftAppMenuNavi
+    
+    
+    
+		"sap_bluecrystal"
+		src="https://openui5.netweaver.ondemand.com/1.28.15/resources/sap-ui-core.js" 
+		
+		//OpenUI5
+		src="https://openui5.netweaver.ondemand.com/resources/sap-ui-core.js"
+
+		//use SAPUI5 from SAP HANACloud
+		src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+
+		//within Eclipse with SAP UI Development Toolkit for HTML5
+		src="resources/sap-ui-core.js"
+	
+		//serve locally with Node.js 
+		src="http://localhost:8888/sapui5/1.18.11/resources/sap-ui-core.js"
+	-->
+
+    <!-- Custom Styles 
+    <link rel="stylesheet" type="text/css" href="css/style.css" />-->
+    <script>
+        sap.ui.getCore().attachInit(function() {
+ 
+      /* test to read hashtag in URL { */ 	
+        	var shash = document.location.hash; 
+    	    if (shash){
+    	    	
+		    //	ui5eq.app.config.LaunchpadMode = false;
+        		sap.ui.jsview("RootView", "ui5eq.view.App").placeAt('root');
+        /* 
+    		    var access_token = shash.match(/\#(?:access_token)\=([\S\s]*?)\&/);
+    		   //var token = this.getParameterByName("#access_token", shash);
+    		  if(access_token.length > 0)
+    		  if (access_token[1] == "hola" ) {
+    	        	sap.ui.jsview("RootView", "ui5eq.view.App").placeAt('root');
+
+    		    } else{ 
+    		    	
+    		     // var app   = new sap.m.App({initialPage:"idMainView1"});			
+    		    	var page= new sap.m.Page({
+    		    	     title: "No authorization",
+    		             content: [ new sap.m.Button({text: "Update Changes", icon : "sap-icon://upload"}) ]
+    		         });
+    		    	app.addPage(page);
+    		    	app.placeAt('root'); 
+    		    } 
+    		 */
+    	    } else   
+       /* test to read hashtag in URL } */ 	
+
+        	sap.ui.jsview("RootView", "ui5eq.view.App").placeAt('root');
+  
+        });
+    </script>
+</head>
+
+<body class="sapUiBody" id="root">
+</body>
+
+</html>

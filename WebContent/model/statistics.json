@@ -1,0 +1,72 @@
+{
+    "results": [{
+        "code": "CO1",
+        "city": "Tunis",
+        "country": "Tunisia",
+        "image": "./img/tunisia.png",
+        "DomainRank": "1,2,3,4,1,2,3",
+        "overview"  : "table"
+    },{
+        "code": "CO2",
+        "city": "Cairo",
+        "country": "Egypt",
+        "image": "./img/egypt.png",
+        "DomainRank": "2,3,4,1,2,3,4",
+        "overview"  : "table"
+    },{
+        "code": "CO3",
+        "city": "Amman",
+        "country": "Jordan",
+        "image": "./img/jordan.png",
+        "DomainRank": "3,4,1,2,3,4,1",
+        "overview"  : "table"
+    },{
+        "code": "CO4",
+        "city": "Rabat",
+        "country": "Morocco",
+        "image": "./img/morocco.png",
+        "DomainRank": "4,1,2,3,4,1,2,",
+        "overview"  : "table"
+    },{
+        "code": "CO5",
+        "city": "Beirut",
+        "country": "lebanon",
+        "image": "./img/lebanon.png",
+        "DomainRank": "1,2,3,4,1,2,3",
+        "overview"  : "table"
+    }],
+    "Domains" :[{
+        		"id": 	"tpool",
+        		"name": "Talent Pool",
+        		"indicators": "table"
+        	},{
+        		"id": 	"fundi",
+        		"name": "Funding",
+        		"indicators": "table"
+        	},{
+        		"id": 	"sp&sup",
+        		"name": "Spaces & Support",
+        		"indicators": "table"
+        	},{
+        		"id": 	"EntEnv",
+        		"name": "Enterpreneurial Env.",
+        		"indicators": "table"
+        	},{
+        		"id": 	"Adm&Inf",
+        		"name": "Admin & Infrastructure",
+        		"indicators": "table"
+        	},{
+        		"id": 	"QoL",
+        		"name": "Quality of Life",
+        		"indicators": "table"
+        	},{
+        		"id": 	"Gov",
+        		"name": "Governance/Policy",
+        		"indicators": "table"
+        	},{
+        		"id": 	"overview",
+        		"name": "Factsheet/ overview",
+        		"indicators": "table"
+        	}
+   ]  
+}

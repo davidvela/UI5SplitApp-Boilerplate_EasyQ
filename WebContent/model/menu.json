@@ -1,0 +1,73 @@
+{
+ "results":[{
+        "title": "About",
+        "icon": "sap-icon://sys-help",
+        "targetPage": "Info",
+        "description": "More Information"
+    },{
+        "title": "EQUser Management",
+        "icon": "sap-icon://manager",
+        "targetPage": "EQUsers",
+        "description": "List of Users"
+    },{
+        "title": "EQ Web",
+        "icon": "sap-icon://measurement-document",
+        "targetPage": "EQWeb",
+        "description": "EQ Web"
+    },  {
+        "title": "Project Page",
+        "icon": "sap-icon://favorite",
+        "targetPage": "project",
+        "description": "Demo Project"        
+    },  {
+        "title": "Detail Page",
+        "icon": "sap-icon://detail-view",
+        "targetPage": "RadarChartPage",
+        "description": "RadarChart"
+    },{
+        "title": "RadarChart",
+        "icon": "sap-icon://radar-chart",
+        "targetPage": "RadarChartPage",
+        "description": "RadarChart"
+    },{
+        "title": "BublesChart",
+        "icon": "sap-icon://bubble-chart",
+        "targetPage": "BublesChartPage",
+        "description": "BublesChart"
+    },{
+        "title": "WorldChart",
+        "icon": "sap-icon://choropleth-chart",
+        "targetPage": "WorldChartPage",
+        "description": "WorldChart"
+    },{
+        "title": "Bilevel Partition",
+        "icon": "sap-icon://donut-chart",
+        "targetPage": "BilevelChartPage",
+        "description": "Bilevel Partition"
+    },{
+        "title": "Donut",
+        "icon": "sap-icon://donut-chart",
+        "targetPage": "BilevelChartPage",
+        "description": "Donut "
+    },{
+        "title": "Bar Chart",
+        "icon": "sap-icon://bar-chart",
+        "targetPage": "BarChartPage",
+        "description": "BarChart"
+    },{
+        "title": "PieChart",
+        "icon": "sap-icon://pie-chart",
+        "targetPage": "PieChartPage",
+        "description": "Pie Chart"
+    },{
+        "title": "LineChart",
+        "icon": "sap-icon://line-chart",
+        "targetPage": "LineChartPage",
+        "description": "LineChart"
+    },{
+        "title": "Graph (grafo)",
+        "icon": "sap-icon://crossed-line-chart",
+        "targetPage": "LineChartPage",
+        "description": "Graph (grafo)"
+    }]
+}

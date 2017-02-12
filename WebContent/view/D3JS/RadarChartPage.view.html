@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+<style>
+body {
+	overflow: hidden;
+	margin: 0;
+	font-size: 14px;
+	font-family: "Helvetica Neue", Helvetica;
+}
+
+#chart {
+	position: absolute;
+	top: 50px;
+	left: 100px;
+}
+</style>
+</head>
+
+<body>
+	<template data-controller-name="ui5eq.view.RadarChartPage">
+
+	<div data-sap-ui-type="sap.m.Page" data-title="Radar Chart">
+		<div data-sap-ui-aggregation="customHeader" class=" ">
+			<div data-sap-ui-type="sap.m.Bar">
+
+				<div data-sap-ui-aggregation="contentMiddle">
+					<div data-sap-ui-type="sap.m.Label" data-text="Radar Chart">
+					</div>
+				</div>
+
+				<div data-sap-ui-aggregation="contentRight">
+					<div data-sap-ui-type="sap.m.Button" id="homeRadarButtonID"
+						data-tap="onHome" data-icon="sap-icon://home"></div>
+				</div>
+			</div>
+		</div>
+		</br>
+		<div width="auto"
+			class="sapUiLargeMarginBegin  sapUiLargeMarginBottom">
+
+			<h1>Radar Chart from CSV file</h1>
+			<p>
+				Include data in CSV format. The <strong>first row are the
+					headers</strong> and the <strong>first column is the class names.</strong>
+			</p>
+			<textarea id="dataChartRadar" cols="60" rows="5">name,Talentpool, Spaces & Support,Entrepeneurial Env.,Admin & infraestructure,Queality of Life, Governance/Policy
+Tunis,   1,2,3,4,1,2,3
+Cairo,   2,3,4,1,2,3,4
+Rabat,   3,4,1,2,3,4,1
+Amman,   4,1,2,3,4,1,2
+</textarea>
+
+			<p>
+				Width: <input type="number" name="w" id="w" class="form-control"
+					value="600" min="200" max="2000" step="" required="required"
+					title=""> Height: <input type="number" name="h" id="h"
+					class="form-control" value="600" min="200" max="2000" step=""
+					required="required" title="">
+			</p>
+			<p>
+				<!-- 	<button class="btn btn-default" onclick='onDraw()' style="width: 200px; height: 50px;">Draw!</button> -->
+			<div data-sap-ui-type="sap.m.Button" id="drawRadarButtonID"
+				data-text="Draw!" data-width="200px" data-height="50px"
+				data-tap="onDrawRadar"></div>
+			</p>
+			<div id="body2">
+				<div id="chart-container"></div>
+			</div>
+			<!--  smartphone  char -->
+			<div id="body">
+				<div id="chart"></div>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>

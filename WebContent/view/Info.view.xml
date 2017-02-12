@@ -1,0 +1,40 @@
+<core:View
+    controllerName="ui5eq.view.Info"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core" >
+    <Page
+        title="{i18n>WELCOME_TITLE}"
+        enableScrolling="true"
+        showNavButton="{device>/isPhone}"
+        navButtonPress="doNavBack" >  
+        <headerContent>
+            <Button
+                icon="sap-icon://home"
+                tooltip="Back to Launchpad"
+                visible="{device>/launchpadMode}"
+                press="doNavBackLaunchpad"
+                >
+            </Button>
+        </headerContent>              
+        <footer>
+            <Bar>
+            </Bar>
+        </footer>
+        <content>
+            <VBox
+                alignItems="Center"
+                justifyContent="Center" >
+                <Image src="img/logo_wb.png" />
+                <Text
+                    text="{i18n>WELCOME_INFO}"
+                    class="welcomeText" >
+                </Text>
+                <Link
+                    text="github Link "
+                    href="https://github.com/davidvela/UI5SplitApp-Boilerplate_EasyQ" >
+                </Link>                            
+            </VBox>
+            <VBox id= "chartFormID2">   </VBox>
+        </content>
+    </Page>
+</core:View>
