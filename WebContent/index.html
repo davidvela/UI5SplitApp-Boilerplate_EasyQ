@@ -83,9 +83,14 @@
     		 */
     	    } else   
        /* test to read hashtag in URL } */ 	
-
-        	sap.ui.jsview("RootView", "ui5eq.view.App").placeAt('root');
+        	//sap.ui.jsview("RootView", "ui5eq.view.App").placeAt('root');
   
+			sap.ui.getCore().attachInit(function () {
+    			new sap.ui.core.ComponentContainer({
+    				name : "ui5eq"
+    			}).placeAt("root");
+			});
+       
         });
     </script>
 </head>
