@@ -89,7 +89,7 @@ sap.ui.jsview("ui5eq.view.D3JS.project", {
         
 
         return new sap.m.Page({
-            title: "Startup Meter",
+            title: "country Meter",
             showNavButton: "{device>/isPhone}",
             navButtonPress: [oController.doNavBack, oController],
             content: [
