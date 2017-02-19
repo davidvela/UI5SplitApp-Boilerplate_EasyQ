@@ -6,10 +6,8 @@ sap.ui.controller("ui5eq.view.AppMenu", {
 
 		if (window.location.hostname == "localhost" || window.location.hostname == "" ) {
 			//this.getView().setModel(new sap.ui.model.json.JSONModel("model/menu.json"));
-
-			sap.ui.getCore().setModel(new sap.ui.model.json.JSONModel("model/menu.json"));
-
-			
+			sap.ui.getCore().setModel(new sap.ui.model.json.JSONModel("model/menu.json"));			
+		
 		}else {
 			var omenuModel = new sap.ui.model.odata.ODataModel("http://devp/sap/opu/odata/sap/Z_EQ_SRV/");
 	        //var jsonModel = new sap.ui.model.json.JSONModel("http://devp/sap/opu/odata/sap/Z_EQ_SRV/menu/?$format=json");

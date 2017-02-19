@@ -1,6 +1,6 @@
 jQuery.sap.require("sap.m.MessageBox");
-jQuery.sap.require("ui5eq.app.RadarChart");
-jQuery.sap.require("ui5eq.app.RadarChart2");
+jQuery.sap.require("ui5eq.Libraries.RadarChart");
+jQuery.sap.require("ui5eq.Libraries.RadarChart2");
 
 sap.ui.controller("ui5eq.view.RadarChartPage", {
 

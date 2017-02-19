@@ -7,17 +7,19 @@ sap.ui.jsview("ui5eq.view.App", {
     },
 
     createContent: function(oController) {
-    	
+
         if(jQuery.sap.getUriParameters().get("mode") === "LeftAppMenuNavi"){
             ui5eq.app.config.LaunchpadMode = false;
         }
 
+        
+       /*  done in the component!
         // set i18n model
-        var oI18nModel = new sap.ui.model.resource.ResourceModel({
+         var oI18nModel = new sap.ui.model.resource.ResourceModel({
             bundleUrl: "i18n/i18n.properties"
         });
         sap.ui.getCore().setModel(oI18nModel, "i18n");
-        this.setModel(oI18nModel, "i18n");
+        this.setModel(oI18nModel, "i18n"); */
 
         // set device model
         var oDeviceModel = new sap.ui.model.json.JSONModel({

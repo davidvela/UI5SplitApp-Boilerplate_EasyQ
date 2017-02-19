@@ -6,8 +6,8 @@ sap.ui.jsview("ui5eq.view.AppLaunchpad", {
 	createContent: function(oController) {
 		var tc = new sap.m.TileContainer("tc", {});
 
-		//var model = new sap.ui.model.json.JSONModel("model/menu.json");
-		var model   = sap.ui.getCore().getModel();
+		var model = new sap.ui.model.json.JSONModel("model/menu.json");
+		//var model   = sap.ui.getCore().getModel();
 
 		var data = model.getData(); 
 		if (data.results != undefined){
