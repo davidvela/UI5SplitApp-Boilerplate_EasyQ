@@ -1,5 +1,5 @@
 jQuery.sap.require("ui5eq.app.config");
-jQuery.sap.require("ui5eq.app.RadarChart");
+jQuery.sap.require("ui5eq.Libraries.RadarChart");
 
 sap.ui.controller("ui5eq.view.Info", {
 
