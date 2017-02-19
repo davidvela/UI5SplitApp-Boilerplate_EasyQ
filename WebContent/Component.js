@@ -15,7 +15,7 @@ return sap.ui.core.UIComponent.extend("ui5eq.Component", {
 			UIComponent.prototype.init.apply(this, arguments);
 
 			// used only for this lessons to show the request individually...
-			//this.getModel().setUseBatch(false);
+			 //this.getModel().setUseBatch(false);
 			// additional initialization can be done here
 		}
 

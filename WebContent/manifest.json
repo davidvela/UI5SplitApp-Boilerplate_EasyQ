@@ -9,9 +9,6 @@
 		"description": "{{appDescription}}",
 		"applicationVersion": {
 			"version": "1.0.0"
-		},
-		"dataSources": {
-
 		}
 	},
 	"sap.ui": {
@@ -55,6 +52,10 @@
 				"settings": {
 					"bundleName": "ui5eq.i18n.i18n"
 				}
+			},
+			"": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri" : "model/menu.json"
 			}
 		},
 		"contentDensities": {
