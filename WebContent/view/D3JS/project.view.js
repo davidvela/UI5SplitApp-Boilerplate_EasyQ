@@ -70,6 +70,7 @@ sap.ui.jsview("ui5eq.view.D3JS.project", {
 		var WorldView ; //= sap.ui.htmlview("WorldMap", "ui5eq.view.WorldMap");
 
 		var RadarView = sap.ui.htmlview("RadarChart", "ui5eq.view.D3JS.RadarChart");
+		var LiquidView = sap.ui.htmlview("LiquidChart", "ui5eq.libraries.D3JS.Liquids");
 
 		var oSpace1 = new sap.m.Text({ text : " " });
 		var oSpace2 = new sap.m.Text({ text : " " });
@@ -82,7 +83,8 @@ sap.ui.jsview("ui5eq.view.D3JS.project", {
 		                                                      otxtCL, 	
 		                                                      oTableData ,
 		                                                      oSpace2,oSpace3, 
-		                                                      RadarView ]   });
+		                                                      RadarView , LiquidView
+															  ]   });
 		
 		centerLayout.setAlignItems("Center");
 		centerLayout.setJustifyContent("Center");

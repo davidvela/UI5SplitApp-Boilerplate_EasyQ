@@ -1,11 +1,13 @@
 jQuery.sap.require("sap.m.MessageBox");
 jQuery.sap.require("ui5eq.Libraries.RadarChartMe");
+jQuery.sap.require("ui5eq.Libraries.liquidFillGauge")
+
 sap.ui.controller("ui5eq.view.D3JS.RadarChartPage", {
 
 	onInit: function() {
 
 		this.initGraphic24();
-
+		this.initLiquid();
 	},
 
 	doNavBack: function(event) {
@@ -126,8 +128,21 @@ sap.ui.controller("ui5eq.view.D3JS.RadarChartPage", {
 	
 	
 	
-	
-	
+		
+	initLiquid: function( ){
+			var config2 = liquidFillGaugeDefaultSettings();
+			config2.circleColor = "#D4AB6A";
+			config2.textColor = "#553300";
+			config2.waveTextColor = "#805615";
+			config2.waveColor = "#AA7D39";
+			config2.circleThickness = 0.1;
+			config2.circleFillGap = 0.2;
+			config2.textVertPosition = 0.8;
+			config2.waveAnimateTime = 2000;
+			config2.waveHeight = 0.3;
+			config2.waveCount = 1;
+			var gauge3 = loadLiquidFillGauge("fillgauge33", 60.1, config2);
+	}	,
 	
 	
 	
@@ -252,6 +267,6 @@ sap.ui.controller("ui5eq.view.D3JS.RadarChartPage", {
 		;	 
 
 
-	}
+	}// init graphic 24
 
 });
