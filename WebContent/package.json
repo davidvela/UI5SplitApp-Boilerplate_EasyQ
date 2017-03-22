@@ -12,7 +12,8 @@
     "grunt-contrib-watch": "~0.5.3",
     "grunt-express": "^1.4.1",
     "grunt-express-server": "~0.4.11",
-    "grunt-open": "~0.2.3"
+    "grunt-open": "~0.2.3",
+    "grunt-ui5": "^0.2.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
