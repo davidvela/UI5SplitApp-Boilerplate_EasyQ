@@ -23,7 +23,7 @@ sap.ui.define([
 
 			}else {
 				this.online = true;
-				oModel = new sap.ui.model.odata.ODataModel("http://devp721.symrise.cns:8000/sap/opu/odata/sap/Z_EQ_SRV/");
+				oModel = new sap.ui.model.odata.ODataModel("/odata/sap/Z_EQ_SRV/");
 				//oModel = sap.ui.getCore().getModel();
 				oModel.read("/EasyQ_UsersSet/", {
 					//null,
